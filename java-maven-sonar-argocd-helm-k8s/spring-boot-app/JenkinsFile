@@ -68,7 +68,7 @@ pipeline {
     stage('Deploy to Kubernetes') {
         steps {
             // Use kubectl to apply the updated deployment file
-            sh 'kubectl apply -f java-maven-sonar-argocd-helm-k8s/spring-boot-app-manifests/deployment.yml'
+            sh '/home/ubuntu/bin/kubectl apply -f java-maven-sonar-argocd-helm-k8s/spring-boot-app-manifests/deployment.yml'
         }
     }
   }
